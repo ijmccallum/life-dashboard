@@ -1,0 +1,11 @@
+openapi: 3.0.0
+info:
+  title: Life Dashboard
+  description: A dashboard for all the life things
+  version: 0.0.0
+servers:
+  - url: http://localhost/
+    description: Need to figure this out for native apps
+paths:
+  /apps/golfTracker/healthcheck:
+    $ref: './apps/golfTracker/openapi.yaml#paths/healthcheck"'
