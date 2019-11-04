@@ -63,5 +63,9 @@
       "mocha": true
     }
   },
-  "husky": { "hooks": { "pre-commit": "pretty-quick --staged" } }
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
 }
