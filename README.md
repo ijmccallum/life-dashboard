@@ -61,3 +61,7 @@ Keep it chunked as small as possible, and immutable. Any update you make creates
 1. Generate a CRUD API from a swagger file - bonus points if it includes the DB
 2. Package said CRUD API to run natively somewhere - using the electron runtime!?!?!?
 3. Set up a UI using react, electron for the desktop, cordova for the mobile apps.
+
+## TODOs
+
+ - automate the release process (starter scripts in ./script)
