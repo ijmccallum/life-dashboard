@@ -1,5 +1,7 @@
 # life-dashboard
 
+http://www.hygen.io/express <<< looks like this might do the trick for code generation!
+
 A dashboard composing multiple small apps. Each instance you run will be stand alone. If you run multiple instances, they will be able to communicate with each other: syncing / other stuff.
 
 The APIs for each app will be defined as OpenAPI spec files first, the CRUD code will be generated from these spec files. See the root ./openapi.yaml file for the whole spec - it references the child apps for their details.
