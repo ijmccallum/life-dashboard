@@ -1,5 +1,10 @@
 # life-dashboard
 
+The Goals
+
+- Me figuring out how to get close to one codebase for Web, Native Desktop, Native Mobile, ... and more.
+- The app: to visualise / help organise lifetime scale things.
+
 http://www.hygen.io/express <<< looks like this might do the trick for code generation!
 
 A dashboard composing multiple small apps. Each instance you run will be stand alone. If you run multiple instances, they will be able to communicate with each other: syncing / other stuff.
