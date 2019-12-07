@@ -1,0 +1,52 @@
+{
+    "name": "build-svelte",
+    "productName": "Life Dashboard: Build Svelte",
+    "version": "0.0.0",
+    "description": "A dashboard for stuff",
+    "main": "./src/main.js",
+    "scripts": {
+        "start": "rollup -c -w",
+        "test": "mocha",
+        "test:lint": "semistandard",
+        "build": "rollup -c"
+    },
+    "author": "ijmccallum",
+    "license": "MIT",
+    "devDependencies": {
+        "@octokit/rest": "^16.3.2",
+        "chai": "^3.4.1",
+        "chai-as-promised": "^6.0.0",
+        "chokidar": "^3.2.1",
+        "devtron": "^1.3.0",
+        "husky": "^0.14.3",
+        "mocha": "^5.2.0",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^1.18.2",
+        "pretty-quick": "^2.0.0",
+        "request": "^2.70.0",
+        "rimraf": "^2.5.2",
+        "rollup": "^1.12.0",
+        "rollup-plugin-commonjs": "^10.0.0",
+        "rollup-plugin-livereload": "^1.0.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-svelte": "^5.0.3",
+        "rollup-plugin-terser": "^4.0.4",
+        "semistandard": "^14.2.0",
+        "signcode": "^0.5.0",
+        "spectron": "^5.0.0",
+        "svelte": "^3.0.0"
+    },
+    "dependencies": {
+        "glob": "^7.1.0"
+    },
+    "standard": {
+        "env": {
+            "mocha": true
+        }
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    }
+}
