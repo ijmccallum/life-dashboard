@@ -1,6 +1,5 @@
-node_modules
-out
-npm-debug.log
 .DS_Store
-public/bundle.*
+.vscode
+.log
+node_modules
 dist

@@ -15,10 +15,16 @@ Still need to choose:
 graphQL server to talk to the small sql db thing I forget
 will a svelt front end work for desktop, web, mobile? (cordova - hopefully yes)
 
-## Structure
+## Install
 
-- /public static files for the render process (the "client" side)
-- /src development here
+- cmake (`brew install cmake`)
+
+
+## Lerna Packages
+
+- **build-electron** the build config and bootstrap wrapper for an electron version of the app
+- **build-svelte** ~~Generates static vanilla JS files for the front end~~ NOT USED (PROBABLY)
+- **build-react-nodegui** Generates native desktop GUI code from React packages
 
 - **OpenAPI spec** (Built by pulling together the app spec files)
 - CRUD server generated from spec file
@@ -70,6 +76,7 @@ Keep it chunked as small as possible, and immutable. Any update you make creates
 1. Generate a CRUD API from a swagger file - bonus points if it includes the DB
 2. Package said CRUD API to run natively somewhere - using the electron runtime!?!?!?
 3. Set up a UI using react, electron for the desktop, cordova for the mobile apps.
+
 
 ## TODOs
 
