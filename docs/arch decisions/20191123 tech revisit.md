@@ -59,9 +59,9 @@ Again Lerna coordinates the packages. Within that, 2 seperate builds will genera
 ## Decision
 
 1. Set up a hello world for each type of build
-    - nodegui
-    - svelte-native
-    - react-native-web
-    - react-nodegui
+    - [x] nodegui 
+    - [x] svelte-native
+    - [ ] react-native-web
+    - [ ] react-nodegui
 2. create a common "hello world" component to try and share between each of the two options.
 
