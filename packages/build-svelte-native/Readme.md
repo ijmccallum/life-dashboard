@@ -2,37 +2,6 @@ This is a barebones svelte-native project template. It was created directly from
 
 # Usage
 
-You can get started with this using `degit`
-
-```bash
-$ degit halfnelson/svelte-native-template myapp
-```
-
-your svelte-native app will be found in the `myapp` folder
-
-# Recreating From Scratch
-
-This was created using:
-
-Create ns core app
-
-```bash
-    tns create svelte-ns-testapp --appid sntest.halfnelson.github.io --ts
-```
-
-Install svelte, svelte-native, svelte-loader
-
-```bash
-    $ npm install --save-dev svelte
-    $ npm install svelte-native
-    $ npm install --save-dev "halfnelson/svelte-loader#fix-virtual-purge"
-    $ npm install --save-dev svelte-native-preprocessor
-```
-import SvelteNativePreprocessor in webpack.config.js
-
-```js
-const svelteNativePreprocessor = require("svelte-native-preprocessor");
-```
 
 Append svelte-loader to end module rules after ts
 
