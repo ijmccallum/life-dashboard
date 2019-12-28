@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "A dashboard for stuff",
   "scripts": {
-    "start": "run-p start:svelte start:electron"
+    "start": ""
   },
   "repository": "https://github.com/electron/electron-api-demos",
   "keywords": [

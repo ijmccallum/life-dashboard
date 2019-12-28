@@ -1,6 +1,6 @@
 # life-dashboard
 
-The Goals
+Figuring out how to do 1 codebase -> native desktop, native mobile, and web. (see ./docs/arch decisions/20191123 tech revisit.md for choosing the tech). 
 
 - Me figuring out how to get close to one codebase for Web, Native Desktop, Native Mobile, ... and more.
 - The app: to visualise / help organise lifetime scale things.
@@ -15,10 +15,12 @@ Still need to choose:
 graphQL server to talk to the small sql db thing I forget
 will a svelt front end work for desktop, web, mobile? (cordova - hopefully yes)
 
-## Install
+## Install / dev set up
 
-- cmake (`brew install cmake`)
+- cmake (`brew install cmake`) is reuired for the nodegui projects
+- lerna 
 
+cd into a project and do your thing!
 
 ## Lerna Packages
 
