@@ -30,10 +30,12 @@ The goal is to have the least number of technologies that will allow a project t
 |------------------|--------------|-----|---------------|----------------|----------------|-----------------|
 | expo             | react-native | x   | x             |                |                |                 |
 | react-nodegui    | react        |     |               | x              |                |                 |
-| react-native-web | react-native | x   |               |                |                |                 |
-| react-native     | react-native |     | x             |                |                |                 |
+|------------------|--------------|-----|---------------|----------------|----------------|-----------------|
 | nodegui          | JS           |     |               | x              |                |                 |
 | svelte-native    | svelte       |     | x             |                |                |                 |
+|------------------|--------------|-----|---------------|----------------|----------------|-----------------|
+| react-native-web | react-native | x   |               |                |                |                 |
+| react-native     | react-native |     | x             |                |                |                 |
 | ionic            | JS           |     |               |                | x              |                 |
 | Electron         | JS           | x   |               |                |                | x               |
 
@@ -68,13 +70,19 @@ Again Lerna coordinates the packages. Within that, 2 seperate builds will genera
     - Outputs Android GUI build (nativescript playground)
     - Outputs iOS GUI build
 
-## Decision
-
 1. Set up a hello world for each type of build
     - [x] nodegui 
     - [x] svelte-native
     - [x] react-native-web
     - [x] expo
-    - [ ] react-nodegui
-2. create a common "hello world" component to try and share between each of the builds
+    - [x] react-nodegui
+2. create a common "hello world" component to try and share between each of the two options.
+    - [ ] react hello world
+    - [ ] plain js hello world
 
+
+## Decision
+
+**expo & react-nodegui**
+
+Expo uses react-native-web.
