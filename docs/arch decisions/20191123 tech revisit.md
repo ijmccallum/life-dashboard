@@ -24,7 +24,7 @@ The goal is to have the least number of technologies that will allow a project t
 - **svelte-native** native mobile builds from svelte code
 - **expo** 
     - builds web, iOS, android using React
-    - could replace react-native-web?
+    - uses react-native-web under the covers
 
 |                  | Src          | Web | Native mobile | Native desktop | WebView mobile | WebView desktop |
 |------------------|--------------|-----|---------------|----------------|----------------|-----------------|
@@ -40,7 +40,7 @@ The goal is to have the least number of technologies that will allow a project t
 ## Choices
 
 ### react-native
-**lerna** & **expo** & **react-native-web** > **react-nodegui**
+**lerna** & **expo** > **react-nodegui**
 
 Lerna coordinates the multiple packages that divide the codebase. Within that, 2 seperate builds will generate builds as detailed in the bullets below. At build time set env variables to switch component wrappers: one wrapper for the react-nodegui Qt components and another wrapper for the react-native-web wrappers. 
 
@@ -49,6 +49,11 @@ Lerna coordinates the multiple packages that divide the codebase. Within that, 2
     - Outputs native mobile GUI
 - react-native > expo > react-nodegui
     - Outputs native desktop GUI
+
+### react-native / electron
+**lerna** & **expo** > **electron**
+
+expo has an electron adapter. https://dev.to/evanbacon/making-desktop-apps-with-electron-react-native-and-expo-5e36
 
 ### Svelte
 **lerna** & **nodegui** & **svelte-native**
@@ -71,5 +76,5 @@ Again Lerna coordinates the packages. Within that, 2 seperate builds will genera
     - [x] react-native-web
     - [x] expo
     - [ ] react-nodegui
-2. create a common "hello world" component to try and share between each of the two options.
+2. create a common "hello world" component to try and share between each of the builds
 
