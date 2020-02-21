@@ -8,13 +8,14 @@
   },
   "repository": "https://github.com/electron/electron-api-demos",
   "keywords": [
-    "Electron",
-    "API",
-    "demo"
+    "learning"
   ],
   "author": "ijmccallum",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
   "dependencies": {},
   "standard": {
     "env": {
