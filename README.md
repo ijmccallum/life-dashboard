@@ -41,6 +41,6 @@ cd into a project and do your thing!
 
 ## Lerna Packages / repo organisation
 
-- `./packages/build-expo` the build config and bootstrap wrapper for an electron version of the app
-- **build-react-nodegui** Generates native desktop GUI code from React packages
+- `./packages/build-expo` the build config for react -> native Android, native iOS, and web apps
+- `./packages/build-react-nodegui` the build config for react -> native Windows, and native Mac
 - `./packages/ui-lib` React UI components
