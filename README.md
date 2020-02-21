@@ -34,6 +34,7 @@ http://www.hygen.io/express <<< looks like this might do the trick for code gene
 
 ## Install / dev set up
 
+- NodeJS 12.x and up (use nvm!)
 - (cmake)[https://cmake.org/] (`brew install cmake`) _required for the nodegui projects_
 - (lerna)[https://lerna.js.org/](`npm install --global lerna`) 
 
@@ -43,4 +44,21 @@ cd into a project and do your thing!
 
 - `./packages/build-expo` the build config for react -> native Android, native iOS, and web apps
 - `./packages/build-react-nodegui` the build config for react -> native Windows, and native Mac
+  - Builds the UI using Qt, it has a series of native UI components
 - `./packages/ui-lib` React UI components
+
+UI components
+
+import { Renderer, View, Text, Window } from "@nodegui/react-nodegui";
+
+
+|        | react-nodegui | expo | ui-lib |
+|--------|---------------|------|--------|
+| Window | x             |      |        |
+| View   | x             |      |        |
+| Text   | x             |      |        |
+|        |               |      |        |
+|        |               |      |        |
+|        |               |      |        |
+|        |               |      |        |
+|        |               |      |        |
