@@ -1,5 +1,5 @@
 {
-  "name": "react-nodegui-starter",
+  "name": "@life-dashboard/build-react-nodegui",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Atul R <atulanand94@gmail.com>",
@@ -14,7 +14,9 @@
     "@nodegui/nodegui": "^0.12.1",
     "@nodegui/react-nodegui": "^0.4.0",
     "open": "^7.0.0",
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "@life-dashboard/app-root": "0.0.0",
+    "@life-dashboard/ui-lib": "0.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

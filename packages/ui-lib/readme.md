@@ -2,6 +2,22 @@
 
 Creates UI components that can be used by both Expo and nodegui-react. This is how those two systems work on their own:
 
+UI components
+
+import { Renderer, View, Text, Window } from "@nodegui/react-nodegui";
+
+
+|        | react-nodegui | expo | ui-lib |
+|--------|---------------|------|--------|
+| Window | x             |      |        |
+| View   | x             |      |        |
+| Text   | x             |      |        |
+|        |               |      |        |
+|        |               |      |        |
+|        |               |      |        |
+|        |               |      |        |
+|        |               |      |        |
+
 **Expo**
 
 ```jsx
@@ -82,3 +98,8 @@ const NodeGuiText = (style) => {
 
 <PageHeading Text={NodeGuiText}>Page Heading</PageHeading>
 ```
+
+---
+
+So 
+

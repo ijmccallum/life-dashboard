@@ -6,6 +6,11 @@ import { StepOne } from "./components/stepone";
 import { StepTwo } from "./components/steptwo";
 import nodeguiIcon from "../assets/nodegui.jpg";
 
+import UISetup from '@life-dashboard/ui-lib';
+const UI = UISetup({ViewPrimitive: View, TextPrimitive: Text});
+
+import AppRoot from '@life-dashboard/app-root';
+
 const minSize = { width: 500, height: 520 };
 const winIcon = new QIcon(path.resolve(__dirname, nodeguiIcon));
 class App extends React.Component {
@@ -17,13 +22,14 @@ class App extends React.Component {
         minSize={minSize}
         styleSheet={styleSheet}
       >
-        <View style={containerStyle}>
+        <AppRoot UI={UI}/>
+        {/* <View style={containerStyle}>
           <Text id="welcome-text">Welcome to NodeGui 🐕</Text>
           <Text id="step-1">1. Play around</Text>
           <StepOne />
           <Text id="step-2">2. Debug</Text>
           <StepTwo />
-        </View>
+        </View> */}
       </Window>
     );
   }

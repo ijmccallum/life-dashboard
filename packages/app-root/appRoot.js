@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import View from '@life-dashboard/ui-lib';
 
-const AppRoot = () => (
-  <View>
-    Hello World
-  </View>
+const AppRoot = ({UI}) => (
+  <UI.View style={styles.container}>
+    <UI.Text>Hello world</UI.Text>
+  </UI.View>
 );
 
 InfoPanel.propTypes = {

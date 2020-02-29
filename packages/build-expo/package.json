@@ -1,4 +1,5 @@
 {
+  "name": "@life-dashboard/build-expo",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -12,7 +13,9 @@
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "@life-dashboard/app-root": "0.0.0",
+    "@life-dashboard/ui-lib": "0.0.0"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.0.0"

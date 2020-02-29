@@ -1,12 +1,11 @@
 {
-  "name": "@life-dashboard/ui-lib",
+  "name": "@life-dashboard/app-root",
   "version": "0.0.0",
-  "description": "UI component lib, takes native primitives",
-  "main": "index.js",
+  "description": "The main app UI",
+  "main": "appRoot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC"
 }
