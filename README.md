@@ -6,6 +6,9 @@ Software to help visualise & organise things... but it's really about how to:
 - Build app instances that can talk to other instances without needing a central server.
 - Generate basic CRUD endpoints from a spec file of some kind.
 
+TODO: (one main TODO at a time!)
+
+ - Get the expo build running
 
 ---
 
