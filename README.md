@@ -10,6 +10,13 @@ TODO: (one main TODO at a time!)
 
  - Get the expo build running
 
+ When importing a component from one of the other packages the expo build (webpack) throws an error when compiling. However moving that same component into the expo build folder lets it work. Something to do with the way learna works vs expo. There's an example repo that uses yarn workspaces that seems to work... hmm.s
+
+ npm & yarn: performance / version freezing
+ npm: package-lock yarn: yarn.lock YARN WORKSPACES
+
+ Lerna: dep management and packaging / publishing monorepo packages. Uses symlinks
+
 ---
 
 ## How to setup this repo to develop it locally
