@@ -8,7 +8,7 @@ Software to help visualise & organise things... but it's really about how to:
 
 TODO: (one main TODO at a time!)
 
- - Get the expo build running
+ - Get the expo build running (set up yarn workspaces to handle monorepo packages then run expo and hope)
 
  When importing a component from one of the other packages the expo build (webpack) throws an error when compiling. However moving that same component into the expo build folder lets it work. Something to do with the way learna works vs expo. There's an example repo that uses yarn workspaces that seems to work... hmm.s
 
@@ -17,16 +17,18 @@ TODO: (one main TODO at a time!)
 
  Lerna: dep management and packaging / publishing monorepo packages. Uses symlinks
 
+
 ---
 
 ## How to setup this repo to develop it locally
 
 - NodeJS 12.x and up (Installing and switching node versions is easier with a (node version manager)[http://npm.github.io/installation-setup-docs/installing/using-a-node-version-manager.html])
-- (cmake)[https://cmake.org/] (`brew install cmake`) _required for the nodegui projects: the builds for mac and windows_
-- (lerna)[https://lerna.js.org/](`npm install --global lerna`) _manages local dependencies_
-- (Expo CLI)[https://docs.expo.io/versions/latest/workflow/expo-cli/](`npm install --global expo-cli`) _runs the native mobile and web builds_
-- For mac users, (Watchman)[https://facebook.github.io/watchman/docs/install.html] is recommended by expo.
-- (Expo client app)[https://docs.expo.io/versions/latest/get-started/installation/#2-mobile-app-expo-client-for-ios] for your Android / iOS
+- [Yarn](https://classic.yarnpkg.com/en/) _Yarn workspaces is required for expo to play nice in a monorepo_
+- [cmake](https://cmake.org/) (`brew install cmake`) _required for the nodegui projects: the builds for mac and windows_
+- [lerna](https://lerna.js.org/) (`npm install --global lerna`) _manages local dependencies_
+- [Expo CLI](https://docs.expo.io/versions/latest/workflow/expo-cli/) (`npm install --global expo-cli`) _runs the native mobile and web builds_
+- For mac users, [Watchman](https://facebook.github.io/watchman/docs/install.html) is recommended by expo.
+- [Expo client app](https://docs.expo.io/versions/latest/get-started/installation/#2-mobile-app-expo-client-for-ios) for your Android / iOS
 
 cd into a project and do your thing!
 

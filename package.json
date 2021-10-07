@@ -3,6 +3,9 @@
   "productName": "Life Dashboard",
   "version": "0.0.0",
   "description": "A dashboard for stuff",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start": "lerna run --scope @life-dashboard/build-expo start --stream --"
   },
